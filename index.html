@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Password Generator</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/CSS/style.css" />
   </head>
   <body>
     <div class="wrapper">
@@ -17,6 +18,29 @@
           <h2>Generate a Password</h2>
         </div>
         <div class="card-body">
+          <!-- Password Parameter Inputs -->
+          <form class="container" action="">
+            <div class="row">
+              <div class="col-6">
+                <input type="checkbox" name="allow-lowercase" id="allow-lowercase" value="Lowercase">
+                <label for="allow-lowercase">Lowercase Letters</label>
+              </div>
+              <div class="col-6">
+                <input type="checkbox" name="allow-uppercase" id="allow-uppercase" value="Uppercase">
+                <label for="allow-uppercase">Uppercase Letters</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-6">
+                <input type="checkbox" name="allow-numbers" id="allow-numbers" value="Numbers">
+                <label for="allow-numbers">Numbers</label>
+              </div>
+              <div class="col-6">
+                <input type="checkbox" name="allow-special-characters" id="allow-special-characters" value="Special-Characters">
+                <label for="allow-special-characters">Special Characters</label>
+              </div>
+            </div>
+          </form>
           <textarea
             readonly
             id="password"
