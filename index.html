@@ -21,23 +21,32 @@
           <!-- Password Parameter Inputs -->
           <form class="container" action="">
             <div class="row">
-              <div class="col-6">
+              <div class="col-sm-6">
                 <input type="checkbox" name="allow-lowercase" id="allow-lowercase" value="Lowercase">
                 <label for="allow-lowercase">Lowercase Letters</label>
               </div>
-              <div class="col-6">
+              <div class="col-sm-6">
                 <input type="checkbox" name="allow-uppercase" id="allow-uppercase" value="Uppercase">
                 <label for="allow-uppercase">Uppercase Letters</label>
               </div>
             </div>
             <div class="row">
-              <div class="col-6">
+              <div class="col-sm-6">
                 <input type="checkbox" name="allow-numbers" id="allow-numbers" value="Numbers">
                 <label for="allow-numbers">Numbers</label>
               </div>
-              <div class="col-6">
+              <div class="col-sm-6">
                 <input type="checkbox" name="allow-special-characters" id="allow-special-characters" value="Special-Characters">
                 <label for="allow-special-characters">Special Characters</label>
+              </div>
+            </div>
+            <br />
+            <div class="row">
+              <div class="col-sm-6">
+                <label for="password-length">Length of password: <br />(between 8 - 126)</label>
+              </div>
+              <div class="col-sm-6">
+                <input type="text" id="password-length" name="password-length" placeholder="20">
               </div>
             </div>
           </form>
