@@ -20,6 +20,7 @@
         <div class="card-body">
           <!-- Password Parameter Inputs -->
           <form class="container" action="">
+            <p>Check the boxes below to choose what types of characters you want in your password. Then enter how many characters you want your password to be.</p>
             <div class="row">
               <div class="col-sm-6">
                 <input type="checkbox" name="allow-lowercase" id="allow-lowercase" value="Lowercase">
@@ -40,13 +41,16 @@
                 <label for="allow-special-characters">Special Characters</label>
               </div>
             </div>
-            <br />
-            <div class="row">
-              <div class="col-sm-6">
-                <label for="password-length">Length of password: <br />(between 8 - 126)</label>
+            <div class="row mt-2">
+              <div class="col-sm-6 ml-md-2">
+                <label for="password-length">
+                  Length of password: 
+                  <br /> 
+                  (between 8 - 126)
+                </label>
               </div>
               <div class="col-sm-6">
-                <input type="text" id="password-length" name="password-length" placeholder="20">
+                <input class="mt-2" type="text" id="password-length" name="password-length" placeholder="20" size="10">
               </div>
             </div>
           </form>
