@@ -20,7 +20,7 @@ function checkRandomNumForAsciiConversion(num) {
         password += `&#${num};`;
     }
     if (password.length < passwordLength) {
-        generateRandomNumberInRange();
+        generateRandomCharacter();
     }
 }
 
@@ -29,7 +29,7 @@ function generateRandomCharacter() {
     if (randomNum >= 33) {
         checkRandomNumForAsciiConversion(randomNum);
     } else {
-        generateRandomNumberInRange();
+        generateRandomCharacter();
     }
 }
 
@@ -43,5 +43,5 @@ function generatePassword() {
 displayPassword = (password) => document.getElementById("password").innerHTML = password;
 
 function test() {
-    password = (console.log(`USE UPPER: ${useUpper}, USE LOWER: ${useLower}, USE NUMBERS: ${useNumber}, USE SPEC CHARS: ${useSpecial}, and LENGTH: ${passwordLength}.`))
+    console.log(password);
 }
