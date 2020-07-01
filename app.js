@@ -1,4 +1,7 @@
-const allowUpper = document.getElementById("allowUpper");
-const allowLower = document.getElementById("allowLower");
-const allowNumber = document.getElementById("allowNumber");
-const allowSpecial = document.getElementById("allowSpecial");
+
+
+
+const allowUpper = document.getElementById("allow-uppercase");
+const allowLower = document.getElementById("allow-lowercase");
+const allowNumber = document.getElementById("allow-numbers");
+const allowSpecial = document.getElementById("allow-special-characters");
