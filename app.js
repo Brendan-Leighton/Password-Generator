@@ -15,7 +15,7 @@ function checkPasswordParameters() {
     // Check if at least 1 box is checked
     !useUpper && !useLower && !useNumber && !useSpecial ? alert(`You must check at least 1 box.`): "";
     // Check password length between 8 - 126
-    passwordLength < 8 && passwordLength < 126 ? alert(`Your password is too short or too long`): "";
+    passwordLength < 8 && passwordLength > 126 ? alert(`Your password is too short or too long`): "";
 }
 
 // Checks 'num' to see if it matches an ascii value && if the ascii's character meets the users selected parameters. If both are True it adds the ascii character to the password String.
