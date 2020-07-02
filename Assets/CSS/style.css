@@ -4,33 +4,28 @@
   box-sizing: border-box;
 }
 
-html,
-body,
-.wrapper {
+html {
   height: 100%;
   margin: 0;
   padding: 0;
-}
-
-body {
   font-family: sans-serif;
   background-color: #f9fbfd;
 }
 
-.wrapper {
+body div.wrapper {
   padding-top: 30px;
   padding-left: 20px;
   padding-right: 20px;
 }
 
-header {
+body header {
   text-align: center;
   padding: 20px;
   padding-top: 0px;
   color: hsl(206, 17%, 28%);
 }
 
-.card {
+body div div.card {
   background-color: hsl(0, 0%, 100%);
   border-radius: 5px;
   border-width: 1px;
@@ -42,7 +37,7 @@ header {
   padding: 30px 40px;
 }
 
-.card-header::after {
+body div div div.card-header::after {
   content: " ";
   display: block;
   width: 100%;
@@ -50,15 +45,20 @@ header {
   height: 2px;
 }
 
-.card-body {
+body div div div.card-body {
   min-height: 100px;
 }
 
-.card-footer {
+/* form div.row {
+  display: flexbox;
+  justify-content: space-around;
+} */
+
+body div div div.card-footer {
   text-align: center;
 }
 
-.card-footer::before {
+body div div div.card-footer::before {
   content: " ";
   display: block;
   width: 100%;
@@ -66,13 +66,13 @@ header {
   height: 2px;
 }
 
-.card-footer::after {
+body div div div.card-footer::after {
   content: " ";
   display: block;
   clear: both;
 }
 
-.btn {
+body div div div button.btn {
   border: none;
   background-color: hsl(360, 91%, 36%);
   border-radius: 25px;
@@ -88,16 +88,12 @@ header {
   cursor: pointer;
 }
 
-button[disabled] {
+body div div div button[disabled] {
   cursor: default;
   background: #c0c7cf;
 }
 
-.float-right {
-  float: right;
-}
-
-#password {
+body div div div textarea.password {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -119,19 +115,19 @@ button[disabled] {
 }
 
 @media (max-width: 690px) {
-  .btn {
+  body div div div button.btn {
     font-size: 1rem;
     margin: 16px 0px 0px 0px;
     padding: 10px 15px;
   }
 
-  #password {
+  body div div div textarea.password {
     font-size: 1rem;
   }
 }
 
 @media (max-width: 500px) {
-  .btn {
+  body div div div button.btn {
     font-size: 0.8rem;
   }
 }
