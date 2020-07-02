@@ -20,7 +20,7 @@ function checkPasswordParameters() {
 
 // Checks 'num' to see if it matches an ascii value && if the ascii's character meets the users selected parameters. If both are True it adds the ascii character to the password String.
 function checkRandomNumForAsciiConversion(num) {
-    if ((useUpper && (num >= 65 && num <= 90)) || (useLower && (num >= 97 && num <= 122)) || (useNumber && (num >= 48 && num <= 57)) || (((useSpecial && (num >= 33 && num <= 47)) || (useSpecial && (num >= 58 && num <= 64)) || (useSpecial && (num >= 91 && num <= 96)) || (useSpecial && (num >= 123 && num <= 126))))) {
+    if (/* Check Uppercase */(useUpper && (num >= 65 && num <= 90)) || /* Check Lowercase */(useLower && (num >= 97 && num <= 122)) || /* Check Number */(useNumber && (num >= 48 && num <= 57)) || /* Check Special Character */(((useSpecial && (num >= 33 && num <= 47)) || (useSpecial && (num >= 58 && num <= 64)) || (useSpecial && (num >= 91 && num <= 96)) || (useSpecial && (num >= 123 && num <= 126))))) {
         password += String.fromCharCode(num);
     }
     if (password.length < passwordLength) {
@@ -37,15 +37,17 @@ function generateRandomCharacter() {
     }
 }
 
+displayPassword = (password) => document.getElementById("password").innerHTML = password;
+
+
 function generatePassword() {
     checkPasswordParameters();
     generateRandomCharacter();
-
+    displayPassword(password);
     test();
     password = "";
 }
 
-displayPassword = (password) => document.getElementById("password").innerHTML = password;
 
 function test() {
     console.log(password);
