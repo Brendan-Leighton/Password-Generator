@@ -18,14 +18,14 @@ body div.wrapper {
   padding-right: 20px;
 }
 
-body header {
+body div header {
   text-align: center;
   padding: 20px;
   padding-top: 0px;
   color: hsl(206, 17%, 28%);
 }
 
-body div div.card {
+body div article.card {
   background-color: hsl(0, 0%, 100%);
   border-radius: 5px;
   border-width: 1px;
@@ -37,7 +37,7 @@ body div div.card {
   padding: 30px 40px;
 }
 
-body div div div.card-header::after {
+body div article section.card-header::after {
   content: " ";
   display: block;
   width: 100%;
@@ -45,20 +45,15 @@ body div div div.card-header::after {
   height: 2px;
 }
 
-body div div div.card-body {
+body div article section.card-body {
   min-height: 100px;
 }
 
-/* form div.row {
-  display: flexbox;
-  justify-content: space-around;
-} */
-
-body div div div.card-footer {
+body div article div.card-footer {
   text-align: center;
 }
 
-body div div div.card-footer::before {
+body div article div.card-footer::before {
   content: " ";
   display: block;
   width: 100%;
@@ -66,13 +61,13 @@ body div div div.card-footer::before {
   height: 2px;
 }
 
-body div div div.card-footer::after {
+body div article div.card-footer::after {
   content: " ";
   display: block;
   clear: both;
 }
 
-body div div div button.btn {
+body div article div button.btn {
   border: none;
   background-color: hsl(360, 91%, 36%);
   border-radius: 25px;
@@ -88,12 +83,12 @@ body div div div button.btn {
   cursor: pointer;
 }
 
-body div div div button[disabled] {
+body div article div button[disabled] {
   cursor: default;
   background: #c0c7cf;
 }
 
-body div div div textarea.password {
+body div article section textarea.password {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -115,19 +110,19 @@ body div div div textarea.password {
 }
 
 @media (max-width: 690px) {
-  body div div div button.btn {
+  body div article div button.btn {
     font-size: 1rem;
     margin: 16px 0px 0px 0px;
     padding: 10px 15px;
   }
 
-  body div div div textarea.password {
+  body div article section textarea.password {
     font-size: 1rem;
   }
 }
 
 @media (max-width: 500px) {
-  body div div div button.btn {
+  body div article div button.btn {
     font-size: 0.8rem;
   }
 }
