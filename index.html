@@ -16,34 +16,27 @@
             <h1>Password Generator</h1>
         </header>
         <article class="card">
-            <section class="card-header">
+            <!-- <section class="card-header">
                 <h2>Generate a Password</h2>
-            </section>
+            </section> -->
             <section class="card-body">
                 <!-- Password Parameter Inputs -->
                 <form class="container" action="">
-                    <p>Check the boxes below to choose the types of characters to include in your password. Then enter
-                        how many characters your password should be.</p>
+                    <p>Check the boxes below to choose the types of characters to include in your password. Then enter how many characters your password should be.</p>
                     <div class="row mr-2 ml-2">
                         <!-- Checkboxes for char types allowed -->
                         <section class="col-sm-6">
                             <div class="row">
-                                <label for="allow-lowercase"><input class="mr-2" type="checkbox" name="allow-lowercase"
-                                        id="allow-lowercase" value="Lowercase">Lowercase</label>
+                                <label for="allow-lowercase"><input class="mr-2" type="checkbox" name="allow-lowercase" id="allow-lowercase" value="Lowercase">Lowercase</label>
                             </div>
                             <div class="row">
-                                <label for="allow-uppercase"><input class="mr-2" type="checkbox" name="allow-uppercase"
-                                        id="allow-uppercase" value="Uppercase">Uppercase</label>
+                                <label for="allow-uppercase"><input class="mr-2" type="checkbox" name="allow-uppercase" id="allow-uppercase" value="Uppercase">Uppercase</label>
                             </div>
                             <div class="row">
-                                <label for="allow-numbers"><input class="mr-2" type="checkbox" 
-                                        name="allow-numbers" id="allow-numbers" 
-                                        value="Numbers">Numbers</label>
+                                <label for="allow-numbers"><input class="mr-2" type="checkbox" name="allow-numbers" id="allow-numbers" value="Numbers">Numbers</label>
                             </div>
                             <div class="row">
-                                <label for="allow-special-characters"><input class="mr-2" type="checkbox"
-                                        name="allow-special-characters" id="allow-special-characters"
-                                        value="Special-Characters">Special Characters</label>
+                                <label for="allow-special-characters"><input class="mr-2" type="checkbox" name="allow-special-characters" id="allow-special-characters" value="Special-Characters">Special Characters</label>
                             </div>
                         </section>
                         <!-- Password length textfield -->
@@ -56,14 +49,12 @@
                                 </label>
                             </div>
                             <div class="row">
-                                <input class="mt-2" type="text" id="password-length" name="password-length"
-                                    placeholder="20" size="15">
+                                <input class="mt-2" type="text" id="password-length" name="password-length" placeholder="20" size="15">
                             </div>
                         </section>
                     </div>
                 </form>
-                <textarea class="password" readonly id="password" placeholder="Your Secure Password"
-                    aria-label="Generated Password"></textarea>
+                <textarea class="password" readonly id="password" placeholder="Your Password Displays Here" aria-label="Generated Password"></textarea>
             </section>
             <div class="card-footer">
                 <button id="generate" class="btn" onclick="generatePassword()">Generate Password</button>
