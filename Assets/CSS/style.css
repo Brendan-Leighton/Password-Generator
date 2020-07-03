@@ -42,7 +42,7 @@ body div article.card {
   background-color: var(--primary);
   border-radius: 5px;
   border-width: 1px;
-  box-shadow: rgba(34, 34, 34, 0.15) 0px 2px 8px 0px;
+  box-shadow: var(--text) 0px 2px 8px 0px;
   color: var(--text);
   font-size: 18px;
   margin: 0 auto;
@@ -84,21 +84,18 @@ body div article div button.btn {
   border: none;
   background-color: var(--button);
   border-radius: 25px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px
-    0px;
   color: var(--primary);
   display: inline-block;
   font-size: 22px;
   line-height: 22px;
-  margin: 16px 16px 16px 20px;
+  margin: 0px 16px 16px 20px;
   padding: 14px 34px;
   text-align: center;
   cursor: pointer;
 }
 
-body div article div button[disabled] {
-  cursor: default;
-  background: #c0c7cf;
+body div article div button.btn:hover {
+  box-shadow: var(--heading) 0px 1px 6px 0px;
 }
 
 body div article section textarea.password {
@@ -122,6 +119,14 @@ body div article section textarea.password {
   border-radius: 6px;
   resize: none;
   overflow: hidden;
+}
+
+::placeholder {
+  color: var(--primary);
+}
+
+input[type=text], input[type=checkbox] {
+  background-color: rgb(185, 185, 185);
 }
 
 @media (max-width: 690px) {
