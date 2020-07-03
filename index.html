@@ -36,7 +36,7 @@
                     </0l>
                     <div class="row mr-2 ml-2 mt-3">
                         <!-- Checkboxes for char types allowed -->
-                        <section class="col-sm-6">
+                        <section class="col-sm-6 mr-sm-0 mr-xs-1">
                             <div class="row">
                                 <label for="allow-lowercase"><input class="mr-2" type="checkbox" name="allow-lowercase" id="allow-lowercase" value="Lowercase" />Lowercase</label>
                             </div>
@@ -65,11 +65,12 @@
                         </section>
                     </div>
                 </form>
-                <textarea class="password" readonly id="password" placeholder="Your Password Displays Here" aria-label="Generated Password"></textarea>
             </section>
-            <div class="card-footer">
+            <section class="card-footer">
+                <textarea class="password" readonly id="password" placeholder="Your Password Displays Here" aria-label="Generated Password"></textarea>
+
                 <button id="generate" class="btn" onclick="generatePassword()">Generate Password</button>
-            </div>
+            </section>
         </article>
     </div>
     <script src="app.js"></script>
