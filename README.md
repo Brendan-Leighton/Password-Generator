@@ -25,7 +25,7 @@ Project Link: [https://br3ndan-l8n.github.io/Password-Generator/](https://br3nda
 
 ## Project Screenshot
 
-![Screenshot](Assets/Images/)
+![Screenshot](Assets/Images/screenshot.png)
 
 ## Assignment
 
